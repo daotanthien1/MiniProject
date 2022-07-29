@@ -1,0 +1,8 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="btn btn-secondary" mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="onLogOut()">Logout</button>
+    <button mat-menu-item routerLink="/product">Create Product</button>
+  </mat-menu>
+  <div class="text-primary font-weight-bold ml-5 user" *ngIf="display != null">Hello <span class="text-uppercase">{{display}}!</span></div>
+</nav>
