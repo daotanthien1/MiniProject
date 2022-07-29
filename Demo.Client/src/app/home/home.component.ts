@@ -16,8 +16,10 @@ export class HomeComponent implements OnInit {
     this.baseUrl = "https://localhost:44315/api/products"
     this.service.GetProduct().subscribe(  
       (datas: any) => {
-        this.data = datas}
+        this.data = datas
+      }
     )
+
   } 
 
   ngOnInit(): void {
@@ -34,5 +36,13 @@ export class HomeComponent implements OnInit {
 
   public PagedChanged(event: any){
     this.page = event
+  }
+
+  public onSearch(keyword:string): any{
+    this.service.SearchProduct(keyword).subscribe(
+      (datas: any) => {
+        this.data = datas
+      } 
+    )
   }
 }

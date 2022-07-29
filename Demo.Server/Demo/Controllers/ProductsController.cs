@@ -16,6 +16,7 @@ namespace Demo.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ProductsController : ControllerBase
     {
         private readonly IProductService _productService;
@@ -24,7 +25,7 @@ namespace Demo.Controllers
             _productService = productService;
         }
 
-        [HttpGet,Authorize]
+        [HttpGet]
         public IEnumerable<Product> GetProducts()
         {
             return _productService.GetProducts();
@@ -61,5 +62,17 @@ namespace Demo.Controllers
         {
             return _productService.DeleteProduct(id);
         }
+
+        [HttpGet("search/{keyword}")]
+        public List<Product> SearchProduct(string keyword)
+        {
+            return _productService.SearchProduct(keyword);
+        }
+
+        //[HttpGet("search")]
+        //public IEnumerable<Product> ResetSearchProduct()
+        //{
+        //    return _productService.GetProducts();
+        //}
     }
 }

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Product } from 'interfaces/product';
 import { ProductService } from '../product.service';
 
 @Component({
@@ -8,6 +9,7 @@ import { ProductService } from '../product.service';
 })
 export class MenuComponent implements OnInit {
   display!: any
+  data!: any
   constructor(private service:ProductService) {
     var userName = localStorage.getItem('user')
     if(userName != null)

@@ -59,4 +59,13 @@ export class ProductService{
       headers: new HttpHeaders({ "Content-Type": "application/json"})
     })
   }
+
+  public SearchProduct(keyword:string) : any{
+    debugger
+    if(keyword == "")
+      return this.http.get<any[]>(this.baseUrl,this.GetToken())
+    else
+      return this.http.get<any[]>(`${this.baseUrl}/search/${keyword}`,this.GetToken())
+
+  }
 }

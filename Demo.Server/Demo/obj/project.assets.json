@@ -9173,11 +9173,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tdao21\\DemoAppTest\\WebApp\\Demo\\Demo.Server\\Demo\\Demo.csproj",
+      "projectUniqueName": "C:\\Users\\tdao21\\DemoAppTest\\Demo.Server\\Demo\\Demo.csproj",
       "projectName": "Demo",
-      "projectPath": "C:\\Users\\tdao21\\DemoAppTest\\WebApp\\Demo\\Demo.Server\\Demo\\Demo.csproj",
+      "projectPath": "C:\\Users\\tdao21\\DemoAppTest\\Demo.Server\\Demo\\Demo.csproj",
       "packagesPath": "C:\\Users\\tdao21\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tdao21\\DemoAppTest\\WebApp\\Demo\\Demo.Server\\Demo\\obj\\",
+      "outputPath": "C:\\Users\\tdao21\\DemoAppTest\\Demo.Server\\Demo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

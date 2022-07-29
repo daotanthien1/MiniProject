@@ -1,3 +1,11 @@
 .button-add{
     clear: both;
 }
+
+.inputs{
+    margin-left: 600px;
+}
+
+.labels{
+    margin-right: 200px;
+}

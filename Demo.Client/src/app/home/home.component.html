@@ -1,5 +1,10 @@
 <app-menu></app-menu>
+
 <h2 class="text-danger text-uppercase text-center font-weight-bold">My Products</h2>
+<div class="input-group">
+  <input #keyword type="search" class="form-control rounded inputs" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+  <button type="button" class="btn btn-outline-primary labels" (click)="onSearch(keyword.value)">Search</button>
+</div>
 <div class="card ml-2 mt-2 float-left" style="width: 18rem;" *ngFor="let item of data | paginate: {itemsPerPage:itemsToDisplay,currentPage:page}">
     <img [src]="createImgPath(item.imageUrl)" alt="profile picture" style="width:287px; height:180px;">
     <div class="card-body">

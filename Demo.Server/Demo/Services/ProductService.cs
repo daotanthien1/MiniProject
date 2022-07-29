@@ -53,5 +53,25 @@ namespace Demo.Services
       return false;
       
     }
-  }
+
+        public List<Product> SearchProduct(string keyword)
+        {
+            var result = _context.Products.Select(x => x);
+            
+            if (!string.IsNullOrEmpty(keyword))
+            {
+                result = result.Where(x => x.Id.ToString().Equals(keyword)
+                                     || x.Description.Contains(keyword)
+                                     || x.ProductName.Contains(keyword)
+                                     || x.Price.ToString().Contains(keyword));
+                
+                return result.ToList();
+            }
+            else
+            {
+                return result.ToList();
+            }
+            
+        }
+    }
 }

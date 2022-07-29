@@ -13,6 +13,6 @@ namespace Demo.Services
         Product AddProduct(Product product);
         Product UpdateProduct(Product product,int id);
         bool DeleteProduct(int id);
-        
+        List<Product> SearchProduct(string keyword);
     }
 }
