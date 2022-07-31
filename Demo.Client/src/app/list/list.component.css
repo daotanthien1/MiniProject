@@ -1,0 +1,21 @@
+.button-add{
+    clear: both;
+}
+
+.inputs{
+    margin-left: 300px;
+}
+
+
+.fonts{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px rgb(145, 145, 145);
+    padding-bottom: 25px;
+}
+
+h2{
+    background: -webkit-linear-gradient(#33ccff 0%, #ff99cc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

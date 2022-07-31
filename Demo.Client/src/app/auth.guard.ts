@@ -9,7 +9,9 @@ import { ProductService } from './product.service';
 export class AuthGuard implements CanActivate {
   result!: boolean
   form!:NgForm
-  constructor(private route:Router){}
+  constructor(private route:Router){
+    
+  }
 
   canActivate(
     route: ActivatedRouteSnapshot,

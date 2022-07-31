@@ -1,0 +1,17 @@
+<app-menu (getSearchProp)="resSearch($event)"></app-menu>
+<h2 class="text-uppercase text-center font-weight-bold fonts mt-5"><span class="text1">My Products</span></h2>
+<div class="card ml-2 mt-2 float-left" style="width: 18rem;" *ngFor="let item of data | paginate: {itemsPerPage:itemsToDisplay,currentPage:page}">
+    <img [src]="createImgPath(item.imageUrl)" alt="profile picture" style="width:287px; height:180px;">
+    <div class="card-body">
+      <h5 class="card-title">{{item.productName}}</h5>
+      <p class="card-text">{{item.price | currency}}</p>
+      <p class="card-text"><span class="font-weight-bold text-success">Description:</span> {{item.description}}</p>
+      <button class="btn btn-primary" routerLink="/edit/{{item.id}}">Edit</button>
+      <button class="btn btn-danger ml-2" (click)="onDelete(item.id)">Delete</button>
+    </div>  
+</div>
+
+<div class="ml-2 button-add">
+    <br>
+    <pagination-controls (pageChange)="pagedChanged($event)" ></pagination-controls> 
+</div>

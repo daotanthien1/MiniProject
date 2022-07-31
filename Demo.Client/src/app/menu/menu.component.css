@@ -1,3 +1,15 @@
 .user{
     font-size: 20px;
+    background: -webkit-linear-gradient(#33ccff 0%, #ffb6db 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+.input-group{
+    margin-left: 300px;
+}
+
+.labels{
+    margin-right: 200px;
+}
+
