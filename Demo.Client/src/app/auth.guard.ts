@@ -10,20 +10,17 @@ export class AuthGuard implements CanActivate {
   result!: boolean
   form!:NgForm
   constructor(private route:Router){
-    
-  }
 
+  }
+    
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): boolean {     
-    if(localStorage.getItem('token')!= null){
+    if(localStorage.getItem('token')){
       return true;
     }     
-    else{
-      this.route.navigate(['/login']);
-      return false;
-    }
-      
+    this.route.navigate(['/login']);
+    return false;
   }
   
 }

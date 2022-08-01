@@ -8,7 +8,7 @@ import { ProductComponent } from './product/product.component';
 import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
-  { path: '',canActivate:[AuthGuard],component:HomeComponent,pathMatch:"full" },
+  { path: '',canActivate:[AuthGuard],component:HomeComponent,pathMatch:"full"},
   { path: 'login',component:AuthComponent },
   { path: 'register',component:RegisterComponent },
   { path: 'home',canActivate:[AuthGuard],component:HomeComponent },
@@ -19,6 +19,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }

@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthComponent } from './auth/auth.component';
 
 @Component({
@@ -6,6 +7,11 @@ import { AuthComponent } from './auth/auth.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent{
 
+export class AppComponent{
+  ngOnInit(): void {
+    setInterval(function () {
+      localStorage.clear();
+    }, 180000);
+  }
 }

@@ -18,11 +18,8 @@ export class MenuComponent implements OnInit {
       this.display = userName
   }
 
-  ngOnInit(): void {
-    if(this.data == null){
-      this.route.navigate(['/login']);
-    }
-  }
+  ngOnInit(): void {}
+  
   public onLogOut() : void {
     localStorage.clear();
     location.reload();
