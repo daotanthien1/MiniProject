@@ -20,7 +20,8 @@ export class HomeComponent implements OnInit {
   } 
 
   ngOnInit(): void {
+    window.onbeforeunload = () => {
+      localStorage.clear()
+    };
   }
-  
-  
 }

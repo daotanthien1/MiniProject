@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, HostListener, OnDestroy, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthComponent } from './auth/auth.component';
 
@@ -9,9 +9,5 @@ import { AuthComponent } from './auth/auth.component';
 })
 
 export class AppComponent{
-  ngOnInit(): void {
-    setInterval(function () {
-      localStorage.clear();
-    }, 180000);
-  }
+
 }
