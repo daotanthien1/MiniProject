@@ -1,0 +1,28 @@
+<!-- <img [src]="createImgPath(response)" alt="profile picture" style="width:300px; height:300px;">
+<p class="card-title">{{productName}}</p>
+<p class="card-text">{{price | currency}}</p>
+<p class="card-text"><span class="font-weight-bold text-success">Description:</span> {{description}}</p>
+
+<button class="btn btn-warning" routerLink="/home">Back to home</button> -->
+
+
+
+<div>
+    <h1 class="color">Details</h1>
+    <hr />
+    <dl class="row ml-3">
+        <dt class = "col-sm-12">
+            <img [src]="createImgPath(response)" alt="profile picture" style="width:300px; height:300px;">
+        </dt>
+        <dt class = "col-sm-12">
+            <p class="card-title"><span>Name: </span>{{productName}}</p>
+        </dt>
+        <dd class = "col-sm-12">
+            <p class="card-title"><span>Price: </span>{{price | currency}}</p>
+        </dd>
+        <dd class = "col-sm-12">
+            <p class="card-text"><span>Description:</span> {{description}}</p>
+        </dd>
+        <button class="btn btn-warning" routerLink="/home">Back to home</button>
+    </dl>
+</div>

@@ -3,7 +3,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { NgForm } from '@angular/forms'
 import { Router } from '@angular/router';
 import { Product } from 'interfaces/product';
-import { ProductService } from '../product.service';
+import { ProductService } from 'src/app/product.service';
 
 @Component({
   selector: 'app-product',

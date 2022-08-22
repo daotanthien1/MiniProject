@@ -6,11 +6,21 @@
 }
 
 form{
-    width: 700px;
+    width: 600px;
 }
 
 h2{
-    background: -webkit-linear-gradient(#33ccff 0%, #cc99ff 100%);
+    background: -webkit-linear-gradient(#33ccff 30%, #cc99ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+label{
+    background: -webkit-linear-gradient(#05b5f0 0%, #b06cf4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.color{
+    background-color: #D8BFD8	;
 }

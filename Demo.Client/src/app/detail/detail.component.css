@@ -1,0 +1,7 @@
+.color{
+    background: -webkit-linear-gradient(#33ccff 0%, #ff99cc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    margin-top: 10px;
+}

@@ -9,7 +9,6 @@ import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { UploadComponent } from './upload/upload.component';
 import { EditComponent } from './edit/edit.component';
-import { ProductService } from './product.service';
 import { AuthComponent } from './auth/auth.component';
 import { AuthGuard } from './auth.guard';
 import { NgxPaginationModule } from 'ngx-pagination';
@@ -18,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuComponent } from './menu/menu.component';
 import { RegisterComponent } from './register/register.component';
 import { ListComponent } from './list/list.component';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,8 @@ import { ListComponent } from './list/list.component';
     AuthComponent,
     MenuComponent,
     RegisterComponent,
-    ListComponent
+    ListComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,

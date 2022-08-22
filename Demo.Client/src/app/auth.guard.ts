@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree } from '@angular/router';
-import { ProductService } from './product.service';
 
 @Injectable({
   providedIn: 'root'

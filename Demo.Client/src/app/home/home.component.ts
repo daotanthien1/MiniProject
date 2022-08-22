@@ -1,5 +1,6 @@
-import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
+import { AfterViewInit, Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -20,8 +21,5 @@ export class HomeComponent implements OnInit {
   } 
 
   ngOnInit(): void {
-    window.onbeforeunload = () => {
-      localStorage.clear()
-    };
   }
 }

@@ -24,10 +24,17 @@ export class ListComponent implements OnInit{
         this.data = datas
       }
     )
+    this.autoLogout(300000)
   }
   public onLogOut() : void {
-    localStorage.clear();
+    localStorage.removeItem('token');
     location.reload();
+  }
+
+  public autoLogout(time:number) : void{
+    setTimeout(() => {
+      this.onLogOut();
+    }, time);
   }
 
   public onDelete(id:number){

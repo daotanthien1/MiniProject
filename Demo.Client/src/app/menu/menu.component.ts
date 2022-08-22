@@ -18,7 +18,9 @@ export class MenuComponent implements OnInit {
       this.display = userName
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    
+  }
   
   public onLogOut() : void {
     localStorage.clear();
