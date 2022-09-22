@@ -21,11 +21,14 @@ export class ListComponent implements OnInit{
   ngOnInit(): void {
     this.service.GetProduct().subscribe(  
       (datas: any) => {
-        this.data = datas
+        this.data = datas.sort(function(x:any,y:any){
+          return y.price - x.price
+        }).filter((datas:any) => datas.price >= 1)
       }
     )
     this.autoLogout(300000)
   }
+
   public onLogOut() : void {
     localStorage.removeItem('token');
     location.reload();
